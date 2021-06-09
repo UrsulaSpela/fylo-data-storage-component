@@ -28,7 +28,7 @@ body {
   border-radius: 10px 100px 10px 10px;
   margin: 15px;
   position: relative;
-  top: -25px;
+  top: -22px;
   padding: 40px;
 }
 #icons {
@@ -55,6 +55,9 @@ body {
   color: white;
   font-size: 14px;
 }
+#stats {
+  height: 100px;
+}
 #bubble {
   background: white;
   width: 200px;
@@ -62,15 +65,27 @@ body {
   position: relative;
   left: 260px;
   top: -100px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 10px;
   color: black;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+#triangle {
+  width: 30px;
+  height: 30px;
+  background: white;
+  clip-path: polygon(0 0, 100% 100%, 100% 0);
+  position: relative;
+  top: -105px;
+  left: 430px;
+}
 h1 {
   font-size: 32px;
   margin-right: 10px;
+}
+h5 {
+  color: hsl(229, 7%, 55%);
 }
 #progbar {
   position: relative;
@@ -83,6 +98,7 @@ h1 {
   background: hsl(229, 57%, 11%);
   border-radius: 7.5px;
   padding: 2px;
+  margin-bottom: 5px;
 }
 #bar-prog {
   height: 11px;
@@ -112,16 +128,22 @@ h1 {
   }
   #left {
     width: 325px;
+    margin: 5px;
   }
   #right {
     width: 325px;
     height: 160px;
+    margin: 5px;
   }
   #bar {
     width: 255px;
   }
   #bubble {
     left: 20px;
-    top: 70px;
+    top: 90px;
+    border-radius: 10px;
+  }
+  #triangle {
+    display: none;
   }
 }
