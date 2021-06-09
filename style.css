@@ -63,7 +63,14 @@ body {
   left: 260px;
   top: -100px;
   border-radius: 10px;
-  color: hsl(229, 57%, 11%);
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-size: 32px;
+  margin-right: 10px;
 }
 #progbar {
   position: relative;
@@ -95,4 +102,26 @@ body {
 #nmbrs {
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 375px) {
+  #main {
+    background: url(images/bg-mobile.png) no-repeat;
+    width: 375px;
+    height: 100vh;
+    flex-direction: column;
+  }
+  #left {
+    width: 325px;
+  }
+  #right {
+    width: 325px;
+    height: 160px;
+  }
+  #bar {
+    width: 255px;
+  }
+  #bubble {
+    left: 20px;
+    top: 70px;
+  }
 }
